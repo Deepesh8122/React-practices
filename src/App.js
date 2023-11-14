@@ -9,11 +9,14 @@ import UserProfile from './userProfile';
 
 import PropsComponent from './practices/propsComp';
 
+import StateComponent from './practices/sateComp';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        {/* <img src={logo} className="App-logo" alt="logo" />
+        <hr /> */}
         {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -27,7 +30,9 @@ function App() {
         </a> */}
 
         <Header />
+        <hr />
         <Profile />
+        <hr />
 
         <UserProfile 
         text="Functional Component | User Profile" 
@@ -36,19 +41,27 @@ function App() {
           Age: '21',
           Gender: 'Male'
           }} />
+          <hr />
 
         <PropsComponent 
         componentDate={{
           Com_Name: 'Props Component File'
         }} textName={{Name: 'Deepesh'}} />
+        <hr />
 
 
         <PropsComponent 
         componentDate={{
           Com_Name: 'Props Component 2 File'
         }} textName={{Name: 'Peter'}} />
+        <hr />
 
 
+        <StateComponent date={{
+          title: 'State Management Component',
+          sub_text: 'Now you can use the Sate feaure in this component'
+        }} />
+        <hr />
 
       </header>
     </div>
