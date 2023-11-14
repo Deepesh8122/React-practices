@@ -12,13 +12,13 @@ export default class Header extends React.Component {
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            Home
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            About
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            Contact
                         </li>
                     </ul>
                 </nav>
