@@ -10,6 +10,8 @@ import UserProfile from './userProfile';
 import PropsComponent from './practices/propsComp';
 
 import StateComponent from './practices/sateComp';
+import HideshowComp from './practices/hideShowEvent';
+import EventHandling from './practices/eventHanding';
 
 function App() {
   return (
@@ -59,9 +61,20 @@ function App() {
 
         <StateComponent date={{
           title: 'State Management Component',
-          sub_text: 'Now you can use the Sate feaure in this component'
+          sub_text: 'Now you can use the State feaure in this component'
         }} />
         <hr />
+
+        <HideshowComp 
+        data={{
+          sub_text:'This component is using for the hide and show event reference'
+        }} />
+        <hr />
+
+        <EventHandling 
+        data={{
+          sub_title:'This component is using for the Click Events handling'
+        }} />
 
       </header>
     </div>

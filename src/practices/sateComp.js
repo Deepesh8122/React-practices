@@ -3,6 +3,7 @@ class StateComponent extends React.Component {
     constructor(){
         super();
         this.state = {
+            title : 'This is page Title',
             userDate : {
                 fName: 'Peter',
                 lName: 'one',
@@ -14,8 +15,13 @@ class StateComponent extends React.Component {
         return (
             <div>
                 <h2>
-                    {this.props.date.title}
+                    {/* {this.props.date.title} */}
+                    Title: {this.state.title} 
                 </h2>
+                <sub><code>Title cames for the state</code></sub>
+                <br />
+                <br />
+                <br />
                 <p>
                     {this.props.date.sub_text}
                 </p>
@@ -23,14 +29,15 @@ class StateComponent extends React.Component {
                 <h3>
                     User Date
                 </h3>
-                <ol>
+                <ul>
                     <li>
                         Full Name: {this.state.userDate.fName +' '+ this.state.userDate.lName}
                     </li>
                     <li>
                         Email Address: {this.state.userDate.email}
                     </li>
-                </ol>
+                </ul>
+                <hr />
             </div>
         )
     }
